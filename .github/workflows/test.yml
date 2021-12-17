@@ -1,0 +1,12 @@
+name: cshete-consume-internal-action
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:    
+      - name: use Public action
+        uses: actions/checkout@v2.4.0
+      - name: use Internal Actions
+        uses: Internal-Actions/cshete-internal-action@v1
+   
